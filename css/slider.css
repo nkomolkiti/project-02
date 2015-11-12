@@ -1,0 +1,132 @@
+
+/*-----------------typography in figure caption------------------*/
+
+.category {
+  font-size: 15px;
+  font-weight:400;
+letter-spacing: .04em;
+}
+
+.masthead {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  padding-top: 25px;
+  letter-spacing: .04em;
+}
+
+.description {
+  font-size: 15px;
+  font-weight:400;
+  line-height: 20px;
+  letter-spacing: .02em;
+  padding-top: 25px
+}
+
+.readmore {
+  font-size: 15px;
+  font-weight:400;
+  line-height: 20px;
+  letter-spacing: .02em;
+  padding-top: 30px
+}
+
+
+/*-----------------pagination------------------*/
+
+.pagination {
+  position: absolute;
+  z-index: 4;
+  /*margin-left:675px;*/
+  margin-top:-31px;
+  background-color: white;
+  padding-left:695px;
+  width:980px;
+  height:29px;
+  opacity: .7;
+}
+
+.pagination li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.pagination a {
+  display: block;
+  margin-top:11px;
+  margin-bottom:8px;
+  width: 9px;
+  height: 9px;
+  overflow: hidden;
+ /* border-radius: 100%; rounds the corner*/
+  /*text-indent: -9999px; to get rid of numbers*/
+}
+
+.onthespot {background-color:#43c0c0;}
+
+.black {background-color: black;}
+
+.pagination a:before { /*This is also to get rid of the numbers*/
+  content: '';
+  display: block;
+  width: 1px;
+  height: 150%;
+}
+
+
+
+/*-----------------slider------------------*/
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+figure { 
+  margin: 0; background: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  z-index: 3;
+}
+.wrapper { 
+  max-width: 980px; 
+  height:400px; 
+  overflow: hidden; 
+  border-top: black solid 1px;
+  border-bottom: solid black 1px;
+}
+figure.slider { 
+  position: relative; 
+  width: 500%;
+  font-size: 0; 
+  animation: 22s slidy infinite; 
+}
+
+/*figure.slider:hover {
+  animation: pause;
+}*/
+
+
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 675px; height: 400px; }
+
+figure.slider figure figcaption { 
+  position: absolute; 
+  bottom: 0; 
+  right:0; 
+  left:675px;
+  height:400px;
+  background: #ffffff;
+  color: #000000;
+  padding:40px 20px 0px 20px; 
+}
+

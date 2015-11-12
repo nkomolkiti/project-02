@@ -1,0 +1,306 @@
+
+
+/* @group Reset */
+
+/* Based on http://meyerweb.com/eric/tools/css/reset/ */
+
+html, body, applet, object, iframe, svg,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	text-decoration: inherit;
+	text-align: left;
+	background: transparent;
+}
+header, footer, figure, details, hgroup,
+section, article, nav, aside {
+	display: block;
+}
+img, object, audio, video, svg {
+	max-width: 100%;
+}
+/*-------------------- @end Reset ------------------*/
+
+
+body {
+	font-family: 'Ubuntu', helvetica, sans-serif; 
+	color: #1a1a1a;
+	margin-right: auto;
+	margin-left: auto;
+	margin: 1% 2.5%;
+	padding: 0 2.5%;
+	background-color: #F2F2F2;
+}
+
+
+/*---------------------links----------------------*/
+
+a {text-decoration: none}
+a:link {color: #43c0c0;}
+a:visited {color: #43c0c0;}
+a:hover {color: #f7323f;}
+
+
+
+/*---------------------header----------------------*/
+
+header {position:fixed; width:100%; z-index: 4;}
+
+.hrtop{width:100%; height:10px;}
+
+.topsection{
+	max-width:980px;
+	margin-right: auto; 
+	margin-left:auto;
+	height:57px;
+	background-color: white;
+}
+
+.logo {
+	float:left;
+	height:23px;
+	margin-top: 17px;
+}
+
+.micalinks {
+	list-style: none;
+	font-weight: 400;
+	font-size: 11px;
+	letter-spacing: .05em;
+/*	float: right;*/
+	line-height: 57px;
+}
+
+.micalinks li {	display: inline-block;}
+.micalinks a:link {color: black;}
+.micalinks a:visited {color: black;}
+.micalinks a:hover {color: #f7323f;}
+
+/*------------------------navigation----------------------*/
+
+nav {
+	font-size:13px;
+	list-style: none;
+	height:28px;
+	background-color: black;
+	width:130px;
+}
+
+nav li{	
+	display: inline-block;
+	position:relative;
+	line-height: 28px;
+	outline: none;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+	font-weight: 500;
+	/*text-shadow: 0 0 1px rgba(255,255,255,0.3);*/
+/*	float:left;
+	margin-right: 50px;*/
+	z-index:3;
+}
+
+/*.navsearch {padding-top:3.5px; float:right; margin-right:0px;}*/
+nav a{display: block;}
+nav a:link {color: #ffffff;}
+nav a:visited {color: #ffffff;}
+nav a:hover {color: #ffffff;}
+
+/*.navtext {width: 980px; height: 28px; margin-left: auto; margin-right: auto;}*/
+
+
+/*------------------------upperlink----------------------*/
+
+.upperlink {
+	height: 43px;
+	background-color: white;
+	opacity: .94;
+	border-top: solid 1px;
+	padding-top: 8px;
+
+}
+
+/*------------------------content----------------------*/
+
+.content {
+	max-width:980px;
+	margin-right: auto; 
+	margin-left:auto;
+	height:auto;
+	padding-top:135px;
+}
+
+.recent {
+	position:relative;
+	padding:0px;
+}
+
+.tiles {
+	height:244px;
+	margin-top:44px;
+	margin-bottom:80px;
+	width:980px;
+}
+
+.left {float:left;}
+.middle {float: left; margin-left:34px; margin-right:34px;}
+.right {float: right;}
+
+
+.organic {
+	min-height:990px; 
+	padding-top:40px; 
+	position:relative; 
+	margin-bottom:60px;
+	width:980px;
+}
+
+.orgcolumn {width:304px;}
+
+
+/*------------------------typography----------------------*/
+
+h1{
+	font-weight:700;
+	font-size: 24px;
+	padding-top: 70px;
+	margin-bottom:60px;
+	line-height: 0px;
+	text-align: center;
+	letter-spacing: .05em;
+}
+
+h2{
+	font-weight: 500;
+	font-size: 16px;
+	float:left;
+	padding-top:11.5px;
+	line-height: 0px;
+}
+
+h3{
+	font-weight: 400;
+	font-size: 16px;
+	float:right;
+	padding-top:11.5px;
+	line-height: 0px;
+}
+
+h4{
+	font-weight: 500;
+	font-size: 20px;
+	text-align: center;
+	line-height: none;
+	margin-bottom:30px;
+}
+
+h5{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 40px;
+	color:white;
+	float:left;
+}
+
+h6 {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 40px;
+	color:white;
+	float:right;
+}
+
+p{
+	font-size:15px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+
+
+/*--------------------------social media-----------------------------*/
+
+.sociallinks {margin-top:100px; margin-bottom:95px;}
+
+.socialmedia {
+	display: table; 
+	max-width: 316px;
+	width:100%;
+	height:auto;
+	table-layout: fixed;
+	margin-left: auto; 
+	margin-right:auto; 
+}
+
+.socialmedia span { 
+	display:table-cell;
+    text-align: center;}
+
+.twitter { width: 49px; height: 49px; display: inline-block;}
+.twitter:link {background-image:url('../images/social-01.png');}
+.twitter:visited {background-image:url('../images/social-01.png');}
+.twitter:hover {background-image:url('../images/social-02.png');}
+
+.tumblr{ width: 49px; height: 49px; display: inline-block;}
+.tumblr:link {background-image:url('../images/social-03.png');}
+.tumblr:visited {background-image:url('../images/social-03.png');}
+.tumblr:hover {background-image:url('../images/social-04.png');}
+
+.vimeo{ width: 49px; height: 49px; display: inline-block;}
+.vimeo:link {background-image:url('../images/social-05.png');}
+.vimeo:visited {background-image:url('../images/social-05.png');}
+.vimeo:hover {background-image:url('../images/social-06.png');}
+
+.behance { width: 49px; height: 49px; display: inline-block;}
+.behance:link {background-image:url('../images/social-07.png');}
+.behance:visited {background-image:url('../images/social-07.png');}
+.behance:hover {background-image:url('../images/social-08.png');}
+
+.flickr { width: 49px; height: 49px; display: inline-block;}
+.flickr:link {background-image:url('../images/social-09.png');}
+.flickr:visited {background-image:url('../images/social-09.png');}
+.flickr:hover {background-image:url('../images/social-10.png');}
+
+
+/*--------------------------------back-to-top----------------------------------*/
+
+.backtotoptext {
+	font-size: 14px;
+	font-weight: 300px;
+	float: right;
+}
+
+.backtotop {
+	height:15px;
+	width:980px;
+	margin-bottom: 30px;
+}
+
+
+/*--------------------------------footer----------------------------------*/
+
+/*footer{
+	background-color: black;
+	height:40px;
+	width:100%;
+	padding-bottom: 0px;
+}
+
+.footer {
+	max-width:980px;
+	margin-left:auto;
+	margin-right: auto;
+}
+*/
